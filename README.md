@@ -2,15 +2,13 @@
 simple linux countainer from scratch
 
 
-# binary
+# build and run
 
 ```bash
 $ make
 or
 $ gcc -o simple-lxcontainer_fs simple-lxcontainer_fs.c
-$ sudo ./simple-lxcontainer_fs
-or
-$ sudo ./simple-lxcontainer_fs cmds
+$ sudo ./simple-lxcontainer_fs or sudo ./simple-lxcontainer_fs cmds
 ```
 
 # resources
