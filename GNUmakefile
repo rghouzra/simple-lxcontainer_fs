@@ -1,7 +1,7 @@
 
 NAME = simple-countainer
 
-SRC = nsfs.c
+SRC = simple-lxcontainer_fs.c
 
 OBJ = $(SRC:.c=.o)
 
