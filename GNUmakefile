@@ -1,5 +1,5 @@
 
-NAME = simple-countainer
+NAME = simple-container
 
 SRC = simple-lxcontainer_fs.c
 
