@@ -1,5 +1,5 @@
-# simple-lxcountainer_fs
-simple linux countainer from scratch
+# simple-lxcontainer_fs
+simple linux container from scratch
 
 
 # build and run
