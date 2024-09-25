@@ -58,7 +58,7 @@ int child_fn(void *arg) {
 // check the stack direction
 // if its true the stack grows downwards
 // otherwise stack grows upwards
-int check_stack_direcktion(int *p) {
+int check_stack_direction(int *p) {
  int a;
 
  return (p > &a) ? 1 : 0;
@@ -72,7 +72,7 @@ int main(int argc, char *argv[]) {
   }
   char **child_fn_arg = (argc >= 2 ? &argv[1]: NULL); 
   int dummy = 0;
-  pid_t pid = clone(child_fn, p_stack + (PS_STACK_SIZE * check_stack_direcktion(&dummy)), CLONE_NEWPID | SIGCHLD, child_fn_arg);
+  pid_t pid = clone(child_fn, p_stack + (PS_STACK_SIZE * check_stack_direction(&dummy)), CLONE_NEWPID | SIGCHLD, child_fn_arg);
   if (pid < 0) {
     perror("clone: ");
     exit(1);
