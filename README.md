@@ -2,7 +2,7 @@
 simple linux countainer from scratch
 
 
-# binary
+# build and run
 
 ```bash
 $ make
